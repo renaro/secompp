@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Secompp</string>
+    <string name="action_settings">Settings</string>
+    <string name="API_ENDPOINT">http://107.170.170.151/isold/api/</string>
+    <string name="search">Buscar</string>
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="add_product">Adicionar Produto</string>
+    <string name="name_mandatory">Nome*</string>
+    <string name="selling_price_mandatory">Preço de Venda*</string>
+    <string name="quantity">Quantidade</string>
+    <string name="buying_price">Preço de Compra</string>
+</resources>

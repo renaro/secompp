@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/add_product"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_mandatory"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textlayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            >
+            <EditText
+                android:id="@+id/selling_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/selling_price_mandatory"
+                android:inputType="numberDecimal"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textlayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+
+            >
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textlayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+
+            >
+            <EditText
+                android:id="@+id/buying_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/buying_price"
+                android:inputType="numberDecimal"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?attr/buttonBarButtonStyle"
+            android:text="ADICIONAR"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            />
+
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
