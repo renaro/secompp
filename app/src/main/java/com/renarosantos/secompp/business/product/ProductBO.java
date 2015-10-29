@@ -5,7 +5,9 @@ import android.support.annotation.NonNull;
 import com.renarosantos.secompp.DAO.ProductDAO;
 import com.renarosantos.secompp.business.BusinessCallback;
 import com.renarosantos.secompp.model.Product;
+import com.renarosantos.secompp.presenter.AddProductPresenter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -35,5 +37,36 @@ public class ProductBO {
             });
         }
 
+    }
+
+    public void saveProduct(final Product product, final BusinessCallback<Product> productCallback) {
+        mProductDAO.saveProduct(product, new BusinessCallback<Product>() {
+            @Override
+            public void onSucess(final Product result) {
+                productCallback.onSucess(result);
+            }
+
+            @Override
+            public void onError() {
+                productCallback.onError();
+
+            }
+        });
+
+
+    }
+
+    public void getLocalProducts(final BusinessCallback<ArrayList<Product>> businessCallback) {
+        mProductDAO.fetchLocalProducts(new BusinessCallback<ArrayList<Product>>() {
+            @Override
+            public void onSucess(final ArrayList<Product> result) {
+                businessCallback.onSucess(result);
+            }
+
+            @Override
+            public void onError() {
+                businessCallback.onError();
+            }
+        });
     }
 }

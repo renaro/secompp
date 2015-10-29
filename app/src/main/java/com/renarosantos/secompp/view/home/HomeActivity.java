@@ -1,13 +1,12 @@
 package com.renarosantos.secompp.view.home;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.renarosantos.secompp.R;
-import com.renarosantos.secompp.view.product.AddProductFragment;
+import com.renarosantos.secompp.view.product.ProductListFragment;
 import com.renarosantos.secompp.view.product.ProductFragment;
 
 /**
@@ -40,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
 
         ProductFragment productFragment = new ProductFragment();
 
-        AddProductFragment addProductFragment = new AddProductFragment();
+        ProductListFragment addProductFragment = new ProductListFragment();
 
 
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager());

@@ -2,11 +2,137 @@
 <items version="2" >
 
     <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.5.0/d737653459be272e881d51024274fa4785225641/okhttp-urlconnection-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d737653459be272e881d51024274fa4785225641">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.5.0-a585ce14bd58ad793e72defd1915b554ec8beabb.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.raizlabs.android/DBFlow/2.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="53dc9d74b0ac22d201549cd806780597d9679e9a">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-7a40a72325b0d8acf41c4082af1d7b97b37d6084.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/okio-1.6.0-1c397f525df883d24894857cf65544ee663b4051.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66fd9d179eb79b64c99e555dead32e725792217a">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-50510fdf22ec6235c167f1c38d0a888494f21ec9.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-19662c390994b6366bc7f5fb4d8b4add689cb174.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-faa8dd85b9cb6a3c34c2b78c455f6f19dae9dbcc.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/gson-2.3.1-348047e780c3c091036cf6e7bcea98c8f4d93e01.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/stetho-okhttp-1.2.0-3d8ae003dc273ec1e6b20fdd631eb3e898944b93.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-543633bac538fb38828c9906cd88c52884216f33.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-23f24e22a7744a1d7dd19c980b85b27d58bc4f02.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/commons-cli-1.2-a885815768d1a05a898798636e57e9d9f3222006.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/classes-7dbd545492bba4f6c868d5a3b4a6fadb0c0b89a4.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.raizlabs.android/DBFlow-Core/2.2.1/e07bfc8e2041edf27469bd94e08bc19f52f4dee7/DBFlow-Core-2.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e07bfc8e2041edf27469bd94e08bc19f52f4dee7">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/DBFlow-Core-2.2.1-5115ba4899efd67d55a6b17f62da2ed4d348c3db.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-061e5995afaae953073db9a272e3b39edaf06f56.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-6d1c838c4d9c85c65232bead6ebfc50e6a5c7e3b.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/jsr305-2.0.1-42de175f0ac317850685b630be212f50c98254ee.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-fb14b583d78409f0bdc415bac76973d2c6f4f9b2.jar" />
+    </item>
+    <item
         jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
         <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/glide-3.6.1-2c18f0938b97e189d45a189bfa69e21d5699be59.jar" />
+    </item>
+    <item
+        jar="/Users/renarosantos/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.2.0/1d6cdb8ce8185b8b23213fad48a83987fb6d2d67/stetho-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1d6cdb8ce8185b8b23213fad48a83987fb6d2d67">
+        <dex dex="/Users/renarosantos/Renaro/repositorio/Secompp/app/build/intermediates/pre-dexed/debug/stetho-1.2.0-50a6cf14e14a63a54d99f3e775ac2be823c0b088.jar" />
     </item>
 
 </items>
