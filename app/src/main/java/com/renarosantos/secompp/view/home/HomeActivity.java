@@ -14,8 +14,11 @@ import com.renarosantos.secompp.view.product.ProductFragment;
  */
 public class HomeActivity extends AppCompatActivity {
 
-    private int[] tabIcons = {android.R.drawable.ic_menu_search,
-            android.R.drawable.ic_menu_agenda};
+    private int[] tabIcons = {R.drawable.buttonfunctions,
+            R.drawable.buttonterms};
+
+    private String[] tabText = {"Buscar",
+            "Adicionar"};
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
 
         for (int i = 0; i < tabLayout.getTabCount(); i++) {
             tabLayout.getTabAt(i).setIcon(tabIcons[i]);
+            tabLayout.getTabAt(i).setText(tabText[i]);
         }
 
     }
@@ -38,12 +42,9 @@ public class HomeActivity extends AppCompatActivity {
     private void setupViewPager(final ViewPager viewPager) {
 
         ProductFragment productFragment = new ProductFragment();
-
         ProductListFragment addProductFragment = new ProductListFragment();
 
-
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
-
 
         adapter.addFragment(productFragment, "Buscar Produtos");
         adapter.addFragment(addProductFragment, "Adicionar Produtos");

@@ -31,6 +31,8 @@ public class ProductListFragment extends Fragment implements ListProductView {
     private RecyclerView mRecyclerView;
     private ProductListAdapter mAdapter;
     private CoordinatorLayout mCoordinatorLayout;
+    private View mEmptyContainer;
+
 
     @Nullable
     @Override
@@ -43,9 +45,9 @@ public class ProductListFragment extends Fragment implements ListProductView {
         mAdapter = new ProductListAdapter();
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setHasFixedSize(true);
+        mEmptyContainer = v.findViewById(R.id.container);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mCoordinatorLayout = (CoordinatorLayout) v.findViewById(R.id.coordinator_layout);
-
         return v;
     }
 
@@ -78,7 +80,13 @@ public class ProductListFragment extends Fragment implements ListProductView {
     }
 
     @Override
-    public void showEmptyList() {
+    public void showEmptyState() {
+        mEmptyContainer.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void hideEmptyState() {
+        mEmptyContainer.setVisibility(View.GONE);
 
     }
 
@@ -93,5 +101,6 @@ public class ProductListFragment extends Fragment implements ListProductView {
             startActivity(AddProductActivity.createIntent(getActivity()));
         }
     }
+
 
 }

@@ -19,18 +19,17 @@ public class AddProductPresenter {
     }
 
 
-
     public void onAddProductRequest() {
         String name = mView.getProductName();
-        String price =mView.getProductPrice();
+        String price = mView.getProductPrice();
         String amount = mView.getProductQuantity();
         String buyingprice = mView.getProductBuyingPrice();
         Product product = new Product(name, price, amount, buyingprice);
-        mProductBO.saveProduct(product,new ProductCallback());
+        mProductBO.saveProduct(product, new ProductCallback());
     }
 
 
-    public class ProductCallback implements BusinessCallback<Product>{
+    public class ProductCallback implements BusinessCallback<Product> {
 
         @Override
         public void onSucess(final Product result) {
@@ -40,6 +39,7 @@ public class AddProductPresenter {
 
         @Override
         public void onError() {
+            mView.onRegisterFailed();
 
         }
     }

@@ -3,7 +3,6 @@ package com.renarosantos.secompp.presenter;
 import com.renarosantos.secompp.business.BusinessCallback;
 import com.renarosantos.secompp.business.product.ProductBO;
 import com.renarosantos.secompp.model.Product;
-import com.renarosantos.secompp.view.product.AddProductView;
 import com.renarosantos.secompp.view.product.ListProductView;
 
 import java.util.ArrayList;
@@ -21,16 +20,17 @@ public class ProductListPresenter {
         mProductBO = productBO;
     }
 
-    public void fetchProducts(){
+    public void fetchProducts() {
         mView.showLoading();
         mProductBO.getLocalProducts(new BusinessCallback<ArrayList<Product>>() {
             @Override
             public void onSucess(final ArrayList<Product> result) {
                 mView.hideLoading();
-                if(result.size() > 0){
+                if (result.size() > 0) {
+                    mView.hideEmptyState();
                     mView.populateList(result);
                 } else {
-                    mView.showEmptyList();
+                    mView.showEmptyState();
                 }
             }
 
@@ -42,7 +42,6 @@ public class ProductListPresenter {
             }
         });
     }
-
 
 
 }

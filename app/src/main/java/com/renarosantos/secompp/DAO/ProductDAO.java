@@ -2,6 +2,7 @@ package com.renarosantos.secompp.DAO;
 
 import android.support.annotation.NonNull;
 
+import com.raizlabs.android.dbflow.sql.language.Delete;
 import com.raizlabs.android.dbflow.sql.language.Select;
 import com.renarosantos.secompp.business.BusinessCallback;
 import com.renarosantos.secompp.model.Product;
@@ -43,9 +44,11 @@ public class ProductDAO {
     }
 
     public void saveProduct(final Product product, final BusinessCallback<Product> businessCallback) {
-        ProductEntity.from(product).async().save();
+        final ProductEntity from = ProductEntity.from(product);
+        from.save();
         businessCallback.onSucess(product);
     }
+
 
     public void fetchLocalProducts(final BusinessCallback<ArrayList<Product>> businessCallback) {
         List<ProductEntity> result = new Select().from(ProductEntity.class).queryList();

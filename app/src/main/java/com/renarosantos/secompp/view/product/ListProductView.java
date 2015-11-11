@@ -14,7 +14,8 @@ public interface ListProductView {
     void showLoading();
     void hideLoading();
     void populateList(@NonNull List<Product> list);
-    void showEmptyList();
+    void showEmptyState();
+    void hideEmptyState();
     void showError();
 
 }

@@ -6,15 +6,24 @@ package com.renarosantos.secompp.view.product;
 public interface AddProductView {
 
     void onAddProductSuccess();
-    void onAddProductRequest();
+
     void onRegisterFailed();
+
     void showLoading();
+
     void hideLoading();
+
     void clearInputs();
+
     String getProductName();
+
     String getProductPrice();
+
     String getProductQuantity();
+
     String getProductBuyingPrice();
+
+
 
 
 }

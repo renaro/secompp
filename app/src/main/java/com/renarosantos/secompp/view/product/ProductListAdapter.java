@@ -32,7 +32,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Product product = mProducts.get(position);
         if (product != null) {
-            holder.populate(product);
+            holder.populate(product, position);
         }
     }
 
@@ -52,6 +52,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         private TextView mProductName;
         private TextView mProductPrice;
         private View mRoot;
+        private int mPosition;
 
         public ViewHolder(View root) {
             super(root);
@@ -59,14 +60,27 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             mProductPrice = (TextView) root.findViewById(R.id.product_price);
             mProductName = (TextView) root.findViewById(R.id.product_name);
             mRoot = root;
+            mRoot.setOnClickListener(new ItemClick());
+
         }
 
 
-        public void populate(final Product product) {
+        public void populate(final Product product, final int position) {
             mProductName.setText(product.name());
             mProductPrice.setText("PREÇO : R$ " + product.price());
             Glide.with(mRoot.getContext()).load(product.mPhoto).into(mImage);
+            mPosition = position;
 
+        }
+
+        private class ItemClick implements View.OnClickListener {
+
+            @Override
+            public void onClick(final View v) {
+                mProducts.remove(mPosition);
+                notifyItemRemoved(mPosition);
+                notifyItemRangeChanged(mPosition, mProducts.size());
+            }
         }
     }
 }

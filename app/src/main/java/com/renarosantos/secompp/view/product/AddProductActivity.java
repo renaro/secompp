@@ -63,14 +63,8 @@ public class AddProductActivity extends AppCompatActivity implements AddProductV
     }
 
     @Override
-    public void onAddProductRequest() {
-        mPresenter.onAddProductRequest();
-
-    }
-
-    @Override
     public void onRegisterFailed() {
-
+        Snackbar.make(mCoordinatorLayout, "Erro! Nao esqueca o nome do produto!", Snackbar.LENGTH_LONG).show();
     }
 
     @Override
@@ -115,10 +109,12 @@ public class AddProductActivity extends AppCompatActivity implements AddProductV
         return mProductBuyingPrice.getText().toString();
     }
 
+
+
     private class OnAddProductClicked implements View.OnClickListener {
         @Override
         public void onClick(final View v) {
-            onAddProductRequest();
+            mPresenter.onAddProductRequest();
         }
     }
 }

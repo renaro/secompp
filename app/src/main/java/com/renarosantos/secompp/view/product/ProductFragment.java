@@ -65,7 +65,6 @@ public class ProductFragment extends Fragment implements View.OnClickListener, P
         if (mPresenter != null) {
             mPresenter.fetchProducts();
         }
-
     }
 
     @NonNull
@@ -92,7 +91,6 @@ public class ProductFragment extends Fragment implements View.OnClickListener, P
     public void populateList(@NonNull final List<Product> list) {
         mAdapter.setList(list);
         mAdapter.notifyDataSetChanged();
-
     }
 
     @Override
